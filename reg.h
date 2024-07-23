@@ -3,6 +3,7 @@
 #include <string> 
 #include <vector> 
 #include <fstream>
+
 class user
 {
 public:
@@ -17,17 +18,17 @@ public:
 	{
 		std::cout << "\n\n\n\n\t\t\t\t input first name :";
 		std::cin >> f_name;
-		std::cout <<std::endl<< "\t\t\t\t input last name :";
+		std::cout << std::endl << "\t\t\t\t input last name :";
 		std::cin >> l_name;
-		
-		std::string namefile = f_name +"_"+ l_name + ".doc";
+
+		std::string namefile = f_name + "_" + l_name + ".doc";
 		std::ofstream ofs(namefile, std::ios::app);
-		
+
 		if (ofs.is_open())
 		{
 			ofs << f_name << " " << l_name << std::endl << "test result :";
 		}
-		
+
 
 	}
 

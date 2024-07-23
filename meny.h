@@ -19,9 +19,9 @@ void meny(user reg)
             else ukaz[i] = "  ";
         }
 
-        std::cout << "\n\n\n\n\t\t\t\t" << ukaz[0] << "registreyschn " << std::endl;
-        std::cout << "\t\t\t\t" << ukaz[1] << "test " << std::endl;
-        std::cout << "\t\t\t\t" << ukaz[2] << "exit " << std::endl;
+        std::cout << "\n\n\n\n\t\t\t\t" << ukaz[0] << "Регистрация " << std::endl;
+        std::cout << "\t\t\t\t" << ukaz[1] << "Тест " << std::endl;
+        std::cout << "\t\t\t\t" << ukaz[2] << "Выход " << std::endl;
         x = 0;
 
         x = getch();

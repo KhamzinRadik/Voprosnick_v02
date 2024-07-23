@@ -38,7 +38,8 @@ public:
 		std::string line_v , line_o;
 		std::vector <std::string> voprosy, otvet;
 
-		std::ifstream in_v("C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\qvestion.txt"); // окрываем файл для чтения
+		//std::ifstream in_v("C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\qvestion.txt"); // окрываем файл для чтения
+		std::ifstream in_v("D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\qvestion.txt");
 		if (in_v.is_open())
 		{
 			std::cout << " file qvestion.txt open ! " << std::endl;
@@ -54,7 +55,8 @@ public:
 		}
 		in_v.close();
 
-		std::ifstream in_o("C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\otvety.txt"); // окрываем файл для чтения
+		//std::ifstream in_o("C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\otvety.txt"); // окрываем файл для чтения
+		std::ifstream in_o("D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\otvety.txt");
 		if (in_o.is_open())
 		{
 			std::cout << " file otvety.txt open ! " << std::endl;

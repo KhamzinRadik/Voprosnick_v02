@@ -1,6 +1,6 @@
 #include "reg.h"
 #include "meny.h"
-#include "uuser.h"
+
 #include "zapisVfail.h"
 #include <windows.h.>
 

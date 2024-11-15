@@ -5,15 +5,18 @@
 #include <stdio.h>
 #include <conio.h>
 #include "reg.h"
+
 void meny(user reg)
 {
+  
     int count = 0;
     int getch();
     std::string ukaz[3] = { "=>"," "," " };
     char x;
+    int size = ukaz->size() + 1;
     while (true)
     {
-        for (int i = 0; i < ukaz->size()+1; i++)
+        for (int i = 0; i < size; i++)
         {
             if (i == count)ukaz[i] = "=>";
             else ukaz[i] = "  ";
@@ -43,13 +46,14 @@ void meny(user reg)
     {
         system("cls");
         reg.uuser();//регистрация экзаменуемого и 
-                    //создание фаило с его именем и фамилией
+                   //создание фаило с его именем и фамилией
         
     }
     if (count == 1 && x == '\r')
     {
         system("cls");
-        reg.test();
+        
+       reg.TEST();
        
     }
     if (count == 2 && x == '\r')

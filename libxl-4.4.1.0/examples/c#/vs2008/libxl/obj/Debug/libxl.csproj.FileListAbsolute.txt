@@ -1,0 +1,6 @@
+C:\libxl\package-windows\examples\c#\vs2008\libxl\bin\Debug\libxl.net.dll.config
+C:\libxl\package-windows\examples\c#\vs2008\libxl\bin\Debug\libxl.net.dll
+C:\libxl\package-windows\examples\c#\vs2008\libxl\bin\Debug\libxl.net.pdb
+C:\libxl\package-windows\examples\c#\vs2008\libxl\obj\Debug\ResolveAssemblyReference.cache
+C:\libxl\package-windows\examples\c#\vs2008\libxl\obj\Debug\libxl.net.dll
+C:\libxl\package-windows\examples\c#\vs2008\libxl\obj\Debug\libxl.net.pdb

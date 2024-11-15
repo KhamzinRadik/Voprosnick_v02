@@ -1,0 +1,8 @@
+C:\libxl\package-windows\examples\c#\vs2008\generate\bin\Debug\generate.exe.config
+C:\libxl\package-windows\examples\c#\vs2008\generate\bin\Debug\generate.exe
+C:\libxl\package-windows\examples\c#\vs2008\generate\bin\Debug\generate.pdb
+C:\libxl\package-windows\examples\c#\vs2008\generate\bin\Debug\libxl.net.dll
+C:\libxl\package-windows\examples\c#\vs2008\generate\bin\Debug\libxl.net.pdb
+C:\libxl\package-windows\examples\c#\vs2008\generate\obj\Debug\ResolveAssemblyReference.cache
+C:\libxl\package-windows\examples\c#\vs2008\generate\obj\Debug\generate.exe
+C:\libxl\package-windows\examples\c#\vs2008\generate\obj\Debug\generate.pdb

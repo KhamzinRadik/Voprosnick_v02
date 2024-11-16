@@ -137,12 +137,8 @@
     <ClInclude Include="reg.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="qvestion.txt" />
-    <None Include="receipt.xls" />
+    <None Include=".gitignore" />
     <None Include="Voprosy.xls" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="otvety.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

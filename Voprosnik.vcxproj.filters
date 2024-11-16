@@ -28,19 +28,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="qvestion.txt">
-      <Filter>Файлы ресурсов</Filter>
-    </None>
     <None Include="Voprosy.xls">
       <Filter>Файлы ресурсов</Filter>
     </None>
-    <None Include="receipt.xls">
-      <Filter>Файлы ресурсов</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="otvety.txt">
-      <Filter>Файлы ресурсов</Filter>
-    </Text>
+    <None Include=".gitignore" />
   </ItemGroup>
 </Project>

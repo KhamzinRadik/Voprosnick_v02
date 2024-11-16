@@ -74,29 +74,46 @@ public:
 		
 
 		Sheet* sheet = book->getSheet(0);
-		//std::vector<std::wstring> vopr_otv;
-		vector <vector <wstring>>  vopr_otv;
-		for (int col = 0; col < 1; ++col)
+		std::cout << "col "<<sheet->lastCol() << " rou " << sheet->lastRow() << endl;
+		vector  <vector<wstring>>  vopr_otv;
+		for (int row_i = 0; row_i < sheet->lastRow(); ++row_i)
 		{
-			for (int row_i = 0; row_i < 3; ++row_i)
+			
+			vopr_otv.push_back(vector<wstring>());
+			for (int col = 0; col < sheet->lastCol(); ++col)
 			{
-				const wchar_t* a = sheet->readStr(col, row_i);
+				const wchar_t* a = sheet->readStr(row_i,col );
 				std::wstring wstr(a);
-				vopr_otv[col].push_back(wstr);
-				std::wcout << wstr << " ";
+				vopr_otv[row_i].push_back(wstr);
+				
+				
 
 			}
 		}
+		for (int col = 0; col < sheet->lastRow(); ++col)
+		{
 			
+			for (int row_i = 0; row_i < sheet->lastCol(); ++row_i)
+			{
+				
+				std::wcout<<vopr_otv[col][row_i]<<" ";
+				
+				
+
+
+			}
+			std::cout << "\n";
+		}
 		
 		
-		
+			std::cout << "\n\n\n\t\t\t введите ответ:";
 		wchar_t otwet[100];
 		std::wcin >> otwet;
 		if (otwet == vopr_otv[0][2])
 		{
-			std::cout << "Привильно";
+			std::cout << "\n\t\t\t Привильно \n";
 		}
+		else std::cout << "\n\t\t\tНЕ Привильно! \n";
 		book->release();
 		system("pause");
 	}

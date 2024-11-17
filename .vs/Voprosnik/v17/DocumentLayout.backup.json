@@ -67,9 +67,10 @@
               "RelativeDocumentMoniker": "meny.h",
               "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\meny.h",
               "RelativeToolTip": "meny.h",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAwEIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAnwAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-20T05:44:06.643Z"
+              "WhenOpened": "2024-10-20T05:44:06.643Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -89,9 +90,9 @@
               "Title": "reg.h",
               "DocumentMoniker": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\reg.h",
               "RelativeDocumentMoniker": "reg.h",
-              "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\reg.h*",
-              "RelativeToolTip": "reg.h*",
-              "ViewState": "AgIAAEYAAAAAAAAAAADgv1oAAAAEAAAAAAAAAA==",
+              "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\reg.h",
+              "RelativeToolTip": "reg.h",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAnwJcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-20T05:25:29.395Z",
               "EditorCaption": ""
@@ -104,9 +105,10 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAABAAAAAAAAAAAADgvxoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-20T05:25:25.867Z"
+              "WhenOpened": "2024-10-20T05:25:25.867Z",
+              "EditorCaption": ""
             }
           ]
         }

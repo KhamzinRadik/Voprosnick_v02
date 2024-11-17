@@ -24,5 +24,6 @@ int main()
 	
 
 
+
 	meny(reg);
 }

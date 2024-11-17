@@ -3,10 +3,7 @@
 
 #include <string> 
 #include <fstream>
-
 #include <sstream>
-
-
 #include <codecvt>
 #include "zapisVfail.h"
 #include <windows.h.>
@@ -30,8 +27,65 @@ public:
 
 	std::string f_name;
 	std::string l_name;
-	
-	
+	vector  <vector<wstring>>  vopr_otv;
+	user()
+	{
+		std::locale::global(std::locale(""));
+
+		Book* book = xlCreateBook();
+
+		book->load(L"Voprosy.xls");
+
+
+
+
+		Sheet* sheet = book->getSheet(0);
+		std::cout << "загружено: столбцы " << sheet->lastCol() << " строки " << sheet->lastRow() << endl;
+		
+
+		for (int row_i = 0; row_i < sheet->lastRow(); ++row_i)
+		{
+
+			vopr_otv.push_back(vector<wstring>());
+			for (int col = 0; col < sheet->lastCol(); ++col)
+			{
+				if (sheet)
+				{
+					const wchar_t* a = sheet->readStr(row_i, col);
+					std::wstring wstr(a);
+					vopr_otv[row_i].push_back(wstr);
+				}
+
+			}
+		}
+		/*for (int col = 0; col < sheet->lastRow(); ++col)
+		{
+
+			for (int row_i = 0; row_i < sheet->lastCol(); ++row_i)
+			{
+
+				std::wcout << vopr_otv[col][row_i] << " ";
+
+
+
+
+			}
+			std::cout << "\n";
+		}
+
+
+		std::cout << "\n\n\n\t\t\t введите ответ:";
+		wchar_t otwet[100];
+		std::wcin >> otwet;
+		if (otwet == vopr_otv[0][2])
+		{
+			std::cout << "\n\t\t\t Привильно \n";
+		}
+		else std::cout << "\n\t\t\tНЕ Привильно! \n";
+		book->release();
+		system("pause");*/
+		book->release();
+	}
 	void uuser()
 
 	{
@@ -54,67 +108,63 @@ public:
 			ofs <<s<<endl<< f_name << " " << l_name << std::endl << "test result :";
 		}
 
-
-	
-
-	
-		
-		
 		system("pause");
 	}
 	void TEST()
 	{
-		std::locale::global(std::locale(""));
-
-		Book* book = xlCreateBook();
-
-		book->load(L"Voprosy.xls");
-
-		
-		
-
-		Sheet* sheet = book->getSheet(0);
-		std::cout << "col "<<sheet->lastCol() << " rou " << sheet->lastRow() << endl;
-		vector  <vector<wstring>>  vopr_otv;
-		for (int row_i = 0; row_i < sheet->lastRow(); ++row_i)
+		std::vector <int> Bvec;
+		srand((unsigned int)time(NULL));
+		int SIZEVEC_vopr = vopr_otv.size();
+		for (int i = 0; i < 20; i++)
 		{
+
+			int a = rand() % (SIZEVEC_vopr - 0);
 			
-			vopr_otv.push_back(vector<wstring>());
-			for (int col = 0; col < sheet->lastCol(); ++col)
+			std::cout << a << " ";
+			if (Bvec.empty())
 			{
-				const wchar_t* a = sheet->readStr(row_i,col );
-				std::wstring wstr(a);
-				vopr_otv[row_i].push_back(wstr);
-				
-				
-
+				Bvec.push_back(a);
 			}
-		}
-		for (int col = 0; col < sheet->lastRow(); ++col)
-		{
 			
-			for (int row_i = 0; row_i < sheet->lastCol(); ++row_i)
+			else
 			{
-				
-				std::wcout<<vopr_otv[col][row_i]<<" ";
-				
-				
-
-
+				auto it = find(Bvec.begin(), Bvec.end(), a);
+			// Проверяем, найдено ли искомое значение
+			
+				while (true)
+					if (it == Bvec.end())
+					{
+						Bvec.push_back(a);
+						break;
+					}
+					else
+					{
+						if (a == SIZEVEC_vopr)
+						{
+							a = 0;
+						}
+						else 
+						{
+							a += 1;
+						}
+						
+						it = find(Bvec.begin(), Bvec.end(), a);
+					}
 			}
-			std::cout << "\n";
-		}
-		
-		
-			std::cout << "\n\n\n\t\t\t введите ответ:";
-		wchar_t otwet[100];
-		std::wcin >> otwet;
+
+			
+			
+			//std::cout << "\n\n\n\t\t\t введите ответ:";
+		//wchar_t otwet[100];
+		/*std::wcin >> otwet;
 		if (otwet == vopr_otv[0][2])
 		{
 			std::cout << "\n\t\t\t Привильно \n";
 		}
 		else std::cout << "\n\t\t\tНЕ Привильно! \n";
-		book->release();
+		
+		 */
+		}
 		system("pause");
 	}
 };

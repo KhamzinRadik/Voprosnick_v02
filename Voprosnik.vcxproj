@@ -76,12 +76,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\gitClone\KhamzinRadik\Voprosnick_v02\libxl-4.4.1.0\include_cpp;D:\C++\LIB\libxl-4.4.1.0\include_cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Admin\KhamzinRadik\KhamzinRadik\Voprosnick_v02\libxl-4.4.1.0\include_cpp;D:\gitClone\KhamzinRadik\Voprosnick_v02\libxl-4.4.1.0\include_cpp;D:\C++\LIB\libxl-4.4.1.0\include_cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\gitClone\KhamzinRadik\Voprosnick_v02\libxl-4.4.1.0\lib;D:\C++\LIB\libxl-4.4.1.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Admin\KhamzinRadik\KhamzinRadik\Voprosnick_v02\libxl-4.4.1.0\lib;D:\gitClone\KhamzinRadik\Voprosnick_v02\libxl-4.4.1.0\lib;D:\C++\LIB\libxl-4.4.1.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libxl.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

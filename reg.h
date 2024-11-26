@@ -28,64 +28,7 @@ public:
 	std::string f_name;
 	std::string l_name;
 	vector  <vector<wstring>>  vopr_otv;
-	user()
-	{
-		std::locale::global(std::locale(""));
-
-		Book* book = xlCreateBook();
-
-		book->load(L"Voprosy.xls");
-
-
-
-
-		Sheet* sheet = book->getSheet(0);
-		std::cout << "загружено: столбцы " << sheet->lastCol() << " строки " << sheet->lastRow() << endl;
-		
-
-		for (int row_i = 0; row_i < sheet->lastRow(); ++row_i)
-		{
-
-			vopr_otv.push_back(vector<wstring>());
-			for (int col = 0; col < sheet->lastCol(); ++col)
-			{
-				if (sheet)
-				{
-					const wchar_t* a = sheet->readStr(row_i, col);
-					std::wstring wstr(a);
-					vopr_otv[row_i].push_back(wstr);
-				}
-
-			}
-		}
-		/*for (int col = 0; col < sheet->lastRow(); ++col)
-		{
-
-			for (int row_i = 0; row_i < sheet->lastCol(); ++row_i)
-			{
-
-				std::wcout << vopr_otv[col][row_i] << " ";
-
-
-
-
-			}
-			std::cout << "\n";
-		}
-
-
-		std::cout << "\n\n\n\t\t\t введите ответ:";
-		wchar_t otwet[100];
-		std::wcin >> otwet;
-		if (otwet == vopr_otv[0][2])
-		{
-			std::cout << "\n\t\t\t Привильно \n";
-		}
-		else std::cout << "\n\t\t\tНЕ Привильно! \n";
-		book->release();
-		system("pause");*/
-		book->release();
-	}
+	
 	void uuser()
 
 	{
@@ -112,6 +55,76 @@ public:
 	}
 	void TEST()
 	{
+		
+			std::locale::global(std::locale(""));
+
+			Book* book = xlCreateBook();
+
+			book->load(L"Voprosy.xls");
+
+
+
+
+			Sheet* sheet = book->getSheet(0);
+
+			for (int row_i = 0; row_i < 3; ++row_i)
+			{
+
+				vopr_otv.push_back(vector<wstring>());
+				for (int col = 0; col < 10; ++col) //sheet->lastCol()
+				{
+					if (sheet)
+					{
+						const wchar_t* a = sheet->readStr(row_i, col);
+						std::wstring wstr(a);
+						vopr_otv[row_i].push_back(wstr);
+					}
+
+				}
+			}
+			for (int col = 1; col < 2; ++col)
+			{
+
+
+
+				std::wcout << "\n " << vopr_otv[0][1] << ": " << vopr_otv[col][1] << " \n " << vopr_otv[0][2] << ": " << vopr_otv[col][2] << "\n\n"
+					<< "\t "<< vopr_otv[0][3] <<": " << vopr_otv[col][3] << "\n\n"
+					<< "\t   1 " << vopr_otv[col][4] << "\n"
+					<< "\t   2 " << vopr_otv[col][5] << "\n"
+					<< "\t   3 " << vopr_otv[col][6] << "\n"
+					<< "\t   4 " << vopr_otv[col][7] << "\n";
+
+				//std::wcout << vopr_otv[col][8];
+				std::cout << "\n\n\t     введите ответ:";
+				wchar_t otwet[10];
+				std::wcin >> otwet;
+				if (otwet == vopr_otv[col][8])
+				{
+					std::cout << "\n\t\t\t Привильно \n";
+
+
+
+
+					//////////////////////////запись правильного в ворд
+				}
+				
+				else 
+				{
+					std::cout << "\n\t\t\tНепривильно! \n";
+				//////////////////////////запись неправильного в ворд
+				}
+
+
+
+
+
+
+			}
+
+
+			book->release();
+		/*
+		* ///рандомные 20 чисел уникальных для вывода рандомных 20ти вопросов
 		std::vector <int> Bvec;
 		srand((unsigned int)time(NULL));
 		int SIZEVEC_vopr = vopr_otv.size();
@@ -152,19 +165,9 @@ public:
 					}
 			}
 
-			
-			
-			//std::cout << "\n\n\n\t\t\t введите ответ:";
-		//wchar_t otwet[100];
-		/*std::wcin >> otwet;
-		if (otwet == vopr_otv[0][2])
-		{
-			std::cout << "\n\t\t\t Привильно \n";
-		}
-		else std::cout << "\n\t\t\tНЕ Привильно! \n";
+			*/
 		
-		 */
-		}
+		//}
 		system("pause");
 	}
 };

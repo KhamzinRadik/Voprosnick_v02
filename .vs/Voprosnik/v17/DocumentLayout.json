@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\reg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\reg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|solutionrelative:reg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\meny.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\meny.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|solutionrelative:meny.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\C\u002B\u002B\\uchim_excel\\main2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -29,8 +29,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -44,30 +48,27 @@
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-11-15T14:17:14.388Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": ".gitignore",
-              "DocumentMoniker": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-15T14:17:14.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "meny.h",
-              "DocumentMoniker": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\meny.h",
+              "DocumentMoniker": "C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\meny.h",
               "RelativeDocumentMoniker": "meny.h",
-              "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\meny.h",
+              "ToolTip": "C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\meny.h",
               "RelativeToolTip": "meny.h",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAnwAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-20T05:44:06.643Z",
               "EditorCaption": ""
@@ -77,35 +78,33 @@
               "DocumentIndex": 4,
               "Title": "main2.cpp",
               "DocumentMoniker": "D:\\C\u002B\u002B\\uchim_excel\\main2.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\C\u002B\u002B\\uchim_excel\\main2.cpp",
               "ToolTip": "D:\\C\u002B\u002B\\uchim_excel\\main2.cpp",
-              "RelativeToolTip": "..\\..\\..\\C\u002B\u002B\\uchim_excel\\main2.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-20T05:36:53.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "reg.h",
-              "DocumentMoniker": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\reg.h",
+              "DocumentMoniker": "C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\reg.h",
               "RelativeDocumentMoniker": "reg.h",
-              "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\reg.h",
+              "ToolTip": "C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\reg.h",
               "RelativeToolTip": "reg.h",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAnwJAAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-20T05:25:29.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "main.cpp",
-              "DocumentMoniker": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\main.cpp",
+              "ToolTip": "C:\\Users\\Admin\\KhamzinRadik\\KhamzinRadik\\Voprosnick_v02\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-20T05:25:25.867Z",
               "EditorCaption": ""

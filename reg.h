@@ -29,7 +29,7 @@ class user
 {
 public:
 	
-
+	std::string namefile;
 	std::string f_name;
 	std::string l_name;
 	vector  <vector<wstring>>  vopr_otv;
@@ -48,7 +48,7 @@ public:
 		std::cout << std::endl << "\t\t\t\t input last name :";
 		std::cin >> l_name;
 
-		std::string namefile = f_name + "_" + l_name +" " + s + ".doc";
+		namefile = f_name + "_" + l_name +" " + s + ".doc";
 		std::ofstream ofs(namefile, std::ios::app);
 
 		if (ofs.is_open())
@@ -57,9 +57,15 @@ public:
 		}
 
 		system("pause");
+		system("cls");
+
+		TEST();
 	}
 	void TEST()
-	{		
+	{
+		std::ofstream ofs;
+		ofs.open(namefile);
+			
 		std::vector <int> Bvec;
 		srand((unsigned int)time(NULL));
 		int SIZEVEC_vopr = 200;
@@ -113,7 +119,7 @@ public:
 
 			Sheet* sheet = book->getSheet(0);
 			
-			for (int row_i = 0; row_i < 2; ++row_i)
+			for (int row_i = 0; row_i < 20; ++row_i)
 			{
 
 				vopr_otv.push_back(vector<wstring>());
@@ -134,8 +140,12 @@ public:
 
 
 
-				std::wcout << "\n " << vopr_otv[0][1] << ": " << vopr_otv[col][1] << " \n " << vopr_otv[0][2] << ": " << vopr_otv[col][2] << "\n\n"
-					<< "\t "<< vopr_otv[0][3] <<": " << vopr_otv[col][3] << "\n\n"
+				std::cout << "\n " << "Метод:    ";
+				std::wcout << vopr_otv[col][1];
+				std::cout << " \n Документ: ";
+				std::wcout << vopr_otv[col][2] << "\n\n";
+				std::cout << " \n\tВопрос : "; 
+				std::wcout << vopr_otv[col][3] << "\n\n"
 					<< "\t   1 " << vopr_otv[col][4] << "\n"
 					<< "\t   2 " << vopr_otv[col][5] << "\n"
 					<< "\t   3 " << vopr_otv[col][6] << "\n"
@@ -154,13 +164,16 @@ public:
 					if (otwet[0] >= '1'&& otwet[0]<='4')
 					{
 						
-						std::wcout << "otwet< " << otwet;
+						
+
 						break;
 
 					}
 					else
 					{
 						std::cout << "\n\n\t     введите число от 1 до 4х";
+						col -= 1;
+						break;
 
 					}
 
@@ -175,15 +188,32 @@ public:
 					std::cout << "\n\t\t\t Привильно (нажмите любую клавишу...)\n";
 
 
+					if (ofs.is_open())
+					{
+						std::cout << " FILE OPEN";
 
+					}
+					else
+					{
+						std::cout << " NOT OPEN!!!";
+					}
 
-					//////////////////////////запись правильного в ворд
+					//////////////////////////запись правильного в ворд count+=1
 				}
 				
 				else 
 				{
 					std::cout << "\n\t\t\tНепривильно! (нажмите любую клавишу...)\n ";
-				//////////////////////////запись неправильного в ворд
+				//////////////////////////запись неправильного в ворд весь вопрос с неправильнфым ответом а затем вывод правильного
+					if (ofs.is_open())
+					{
+						std::cout << " FILE OPEN";
+
+					}
+					else
+					{
+						std::cout << " NOT OPEN!!!";
+					}
 				}
 				
 				int getch();
@@ -198,51 +228,7 @@ public:
 
 
 			book->release();
-		/*
-		* ///рандомные 20 чисел уникальных для вывода рандомных 20ти вопросов
-		std::vector <int> Bvec;
-		srand((unsigned int)time(NULL));
-		int SIZEVEC_vopr = vopr_otv.size();
-		for (int i = 0; i < 20; i++)
-		{
-
-			int a = rand() % (SIZEVEC_vopr - 0);
-			
-			std::cout << a << " ";
-			if (Bvec.empty())
-			{
-				Bvec.push_back(a);
-			}
-			
-			else
-			{
-				auto it = find(Bvec.begin(), Bvec.end(), a);
-			// Проверяем, найдено ли искомое значение
-			
-				while (true)
-					if (it == Bvec.end())
-					{
-						Bvec.push_back(a);
-						break;
-					}
-					else
-					{
-						if (a == SIZEVEC_vopr)
-						{
-							a = 0;
-						}
-						else 
-						{
-							a += 1;
-						}
-						
-						it = find(Bvec.begin(), Bvec.end(), a);
-					}
-			}
-
-			*/
 		
-		//}
 		system("pause");
 	}
 };

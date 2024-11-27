@@ -1,7 +1,7 @@
-Debug/
-Voprosnik/
-libxl-4.4.1.0/
-.vs/
-x64/
+/Debug/
+/Voprosnik/
+/libxl-4.4.1.0/
+/.vs/
+/x64/
 *.txt
 *.doc

@@ -1,9 +1,6 @@
 #pragma once
 
-#include <iostream>
-#include <Windows.h>
-#include <stdio.h>
-#include <conio.h>
+
 #include "reg.h"
 
 void meny(user reg)

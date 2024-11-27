@@ -5,3 +5,8 @@
 /x64/
 *.txt
 *.doc
+Debug/
+Voprosnik/
+libxl-4.4.1.0/
+.vs/
+x64/

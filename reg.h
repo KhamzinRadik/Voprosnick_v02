@@ -6,12 +6,17 @@
 #include <sstream>
 #include <codecvt>
 #include "zapisVfail.h"
-#include <windows.h.>
+#include <Windows.h.>
 #include "libxl.h"
 #include <corecrt_wstring.h>
 #include <iostream>
 #include <vector>
 #include <ctime>
+
+
+#include <stdio.h>
+#include <conio.h>
+
 using namespace std;
 using namespace libxl;
 
@@ -54,7 +59,48 @@ public:
 		system("pause");
 	}
 	void TEST()
-	{
+	{		
+		std::vector <int> Bvec;
+		srand((unsigned int)time(NULL));
+		int SIZEVEC_vopr = 200;
+		for (int i = 0; i < 20; i++)
+		{
+
+			int a = rand() % (SIZEVEC_vopr - 0);
+			if (Bvec.empty())
+			{
+				Bvec.push_back(a);
+			}
+
+			else
+			{
+				auto it = find(Bvec.begin(), Bvec.end(), a);
+				// Проверяем, найдено ли искомое значение
+
+				while (true)
+					if (it == Bvec.end())
+					{
+						Bvec.push_back(a);
+						break;
+					}
+					else
+					{
+						if (a == SIZEVEC_vopr)
+						{
+							a = 0;
+						}
+						else
+						{
+							a += 1;
+						}
+
+						it = find(Bvec.begin(), Bvec.end(), a);
+					}
+			}
+
+		}
+
+				
 		
 			std::locale::global(std::locale(""));
 
@@ -66,23 +112,24 @@ public:
 
 
 			Sheet* sheet = book->getSheet(0);
-
-			for (int row_i = 0; row_i < 3; ++row_i)
+			
+			for (int row_i = 0; row_i < 2; ++row_i)
 			{
 
 				vopr_otv.push_back(vector<wstring>());
-				for (int col = 0; col < 10; ++col) //sheet->lastCol()
+				for (int col = 0; col < 9; ++col) //sheet->lastCol()
 				{
 					if (sheet)
 					{
-						const wchar_t* a = sheet->readStr(row_i, col);
+						const wchar_t* a = sheet->readStr(Bvec[row_i], col);
 						std::wstring wstr(a);
 						vopr_otv[row_i].push_back(wstr);
 					}
 
 				}
 			}
-			for (int col = 1; col < 2; ++col)
+			
+			for (int col = 1; col < 20; ++col)
 			{
 
 
@@ -94,13 +141,38 @@ public:
 					<< "\t   3 " << vopr_otv[col][6] << "\n"
 					<< "\t   4 " << vopr_otv[col][7] << "\n";
 
-				//std::wcout << vopr_otv[col][8];
-				std::cout << "\n\n\t     введите ответ:";
+				std::wcout << vopr_otv[col][8];//вывод правильного ответа
+				
 				wchar_t otwet[10];
-				std::wcin >> otwet;
+				while (true)
+				{
+					
+					
+					std::cout << "\n\n\t     введите ответ:";
+					std::wcin >> otwet;
+					
+					if (otwet[0] >= '1'&& otwet[0]<='4')
+					{
+						
+						std::wcout << "otwet< " << otwet;
+						break;
+
+					}
+					else
+					{
+						std::cout << "\n\n\t     введите число от 1 до 4х";
+
+					}
+
+				}
+
+
+
+				
+				
 				if (otwet == vopr_otv[col][8])
 				{
-					std::cout << "\n\t\t\t Привильно \n";
+					std::cout << "\n\t\t\t Привильно (нажмите любую клавишу...)\n";
 
 
 
@@ -110,11 +182,14 @@ public:
 				
 				else 
 				{
-					std::cout << "\n\t\t\tНепривильно! \n";
+					std::cout << "\n\t\t\tНепривильно! (нажмите любую клавишу...)\n ";
 				//////////////////////////запись неправильного в ворд
 				}
-
-
+				
+				int getch();
+				getch();
+				
+				system("cls");
 
 
 

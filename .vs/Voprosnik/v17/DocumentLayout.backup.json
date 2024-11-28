@@ -29,12 +29,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -65,9 +61,9 @@
               "Title": "reg.h",
               "DocumentMoniker": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\reg.h",
               "RelativeDocumentMoniker": "reg.h",
-              "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\reg.h",
-              "RelativeToolTip": "reg.h",
-              "ViewState": "AgIAALIAAAAAAAAAAAAAwNcAAAAGAAAAAAAAAA==",
+              "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\reg.h*",
+              "RelativeToolTip": "reg.h*",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAAwLMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-20T05:25:29.395Z",
               "EditorCaption": ""
@@ -80,7 +76,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-20T05:25:25.867Z",
               "EditorCaption": ""
@@ -107,7 +103,7 @@
               "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\.gitignore",
               "RelativeToolTip": ".gitignore",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGOSURBVDhPjZNNThtBEIWfw4g1Cx8ka1hlDTTnIIcIfwJB/jB/QRgQkcE\u002BAB6TZa6Qla\u002BRbOLume6qx2J6GtsaJTzpSa2arqqvplUtRPX7fSoJqoIkVAlSUceURLaw8Kcoy3fvNzd/AQBI1vm4f3igiCQHEYbw4sFgwPF4zO719e\u002Bz84u3dd6b\u002BkBVAICoQkQhIhARhGgAaLfbWFleXsqy7Gedl6UCkWb4\u002BFiHklbX1gAAvV4PAJAtLi7NXQHu7r5TRFiUZeWipEsu6FxB6wp6H3jcOUmzTxEoCCAfDlPRJhmzAWU17oxubm8Zgsx1rrrb2N06R\u002B8DP3/52kAQf2Ke/59g\u002BvWSrrpdhiDVvFMzJ1vHia0Ijj5\u002BaiIgAGKU56lok4wxzQTfLi/pQ5jt6qquyRPL0nseHB42EMSqT6N/E6wbE2nndHZ\u002BQe/DbEfrOLGWfycvLr3n3v5BE0H1Cj\u002BeRnWoUevGpLsz6pyesvT\u002BVd7e3UsErfpw3DmhUkFlXOe41jGmjOsdv\u002B9sfWgBwDM6osuDcmNdTQAAAABJRU5ErkJggg==",
               "WhenOpened": "2024-11-15T14:17:14.388Z"
             }
           ]

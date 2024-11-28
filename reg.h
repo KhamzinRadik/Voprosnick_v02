@@ -151,35 +151,32 @@ public:
 					<< "\t   3 " << vopr_otv[col][6] << "\n"
 					<< "\t   4 " << vopr_otv[col][7] << "\n";
 
-				std::wcout << vopr_otv[col][8];//вывод правильного ответа
+				//std::wcout << vopr_otv[col][8];//вывод правильного ответа
 				
 				wchar_t otwet[10];
 				while (true)
 				{
 					
-					
+					int c ;
 					std::cout << "\n\n\t     введите ответ:";
 					std::wcin >> otwet;
-					
-					if (otwet[0] >= '1'&& otwet[0]<='4')
+
+					c=_wtoi(otwet);
+					if (c >= 1 && c <=4)
 					{
 						
-						
-
 						break;
-
 					}
 					else
 					{
 						std::cout << "\n\n\t     введите число от 1 до 4х";
 						col -= 1;
 						break;
-
 					}
 
 				}
 
-
+				
 
 				
 				

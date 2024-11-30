@@ -32,10 +32,10 @@ public:
 
 	std::string f_name;
 	std::string l_name;
-	//vector  <vector<wstring>>  vopr_otv;
+	int nam_sheet = 0;
 	vector  <vector<string>>  vopr_otv;
 	std::string namefile;
-	
+	int count_questions = 0;
 	void uuser()
 
 	{
@@ -55,20 +55,127 @@ public:
 
 		if (ofs.is_open())
 		{
-			ofs <<s<<endl<< f_name << " " << l_name << std::endl << "test result :";
+			ofs <<s<<endl<< f_name << "\n" << l_name << std::endl << "\nРезультаты теста :\n";
 		}
 		ofs.close();
 		system("pause");
+
+
+
+
+
+
+		sheet_list(nam_sheet);
+
 		TEST();
 	}
+
+	int sheet_list(int& nam_list)
+	{
+		int count = 0;
+		int getch();
+		std::string ukaz[3] = { "=>"," "," " };
+		char x;
+		int size = ukaz->size() + 1;
+		while (true)
+		{
+			for (int i = 0; i < size; i++)
+			{
+				if (i == count)ukaz[i] = "=>";
+				else ukaz[i] = "  ";
+			}
+			std::cout << "\n\n\n\n\t\t\t\t" << "Выберете метод контроля для теста\n";
+			std::cout << "\t\t\t\t" << ukaz[0] << "ВИК " << std::endl;
+			std::cout << "\t\t\t\t" << ukaz[1] << "УЗК " << std::endl;
+			std::cout << "\t\t\t\t" << ukaz[2] << "РК " << std::endl;
+			x = 0;
+
+			x = getch();
+
+			if (x == 72)
+			{
+				if (count == 0) count = 2;
+				else count -= 1;
+			}
+
+
+
+			if (x == 80)
+			{
+				if (count == 2) count = 0;
+				else count += 1;
+			}
+			if (count == 0 && x == '\r')
+			{
+				system("cls");
+				nam_list = 0;
+				break;
+			}
+			if (count == 1 && x == '\r')
+			{
+				system("cls");
+
+				nam_list = 1;
+				break;
+			}
+			if (count == 2 && x == '\r')
+			{
+				system("cls");
+				nam_list = 2;
+				break;
+			}
+			system("cls");
+			
+		}
+		return nam_list;
+	}
+
+
+
+
+
 	void TEST()
 	{
+		
+		if (nam_sheet == 0)
+		{
+			std::ofstream  Ofile_questions(namefile, std::ios::app);
+			Ofile_questions << "Метод ВИК \n";
+			Ofile_questions.close();
+		
+		}
+		if (nam_sheet == 1)
+		{
+			std::ofstream  Ofile_questions(namefile, std::ios::app);
+			Ofile_questions << "Метод УК \n";
+			Ofile_questions.close();
+			
+		}
+		if (nam_sheet == 2)
+		{
+			std::ofstream  Ofile_questions(namefile, std::ios::app);
+			Ofile_questions << "Метод РК \n";
+			Ofile_questions.close();
+			
+		}
+		
+
+
+
+
+		
 		
 		
 		std::vector <int> Bvec;
 
 		srand((unsigned int)time(NULL));
-		int SIZEVEC_vopr = 200;
+		std::locale::global(std::locale(""));
+
+		Book* book = xlCreateBook();
+
+		book->load(L"Voprosy.xls");
+		Sheet* sheet = book->getSheet(nam_sheet);
+		int SIZEVEC_vopr = sheet->lastRow();
 		int correct_answers = 0;
 		for (int i = 0; i < 20; i++)
 		{
@@ -109,49 +216,43 @@ public:
 
 				
 		
-			std::locale::global(std::locale(""));
-
-			Book* book = xlCreateBook();
-
-			book->load(L"Voprosy.xls");
+			
 
 
 
 
-			Sheet* sheet = book->getSheet(0);
 			
 			for (int row_i = 0; row_i < 20; ++row_i)
 			{
 
-				//vopr_otv.push_back(vector<wstring>());
+				
 				vopr_otv.push_back(vector<string>());
-				for (int col = 0; col < 9; ++col) //sheet->lastCol()
+				for (int col = 0; col < 9; ++col) 
 				{
 					if (sheet)
 					{
 						const wchar_t* a = sheet->readStr(Bvec[row_i], col);
-						//std::wstring wstr(a);
-
-						/////////////////
 						
-						wstring wstr =(a);
+						
+						wstring wstr =(a);//convert wstr to str
 						size_t len = wcstombs(nullptr, wstr.c_str(), 0) + 1;
 						char* buffer = new char[len];
 						wcstombs(buffer, wstr.c_str(), len);
 						string str(buffer);
 						delete[] buffer;
-						////////////////
+						
 						vopr_otv[row_i].push_back(str);
 					}
 
 				}
 			}
 			std::ofstream  Ofile_questions(namefile, std::ios::app);
-			//Ofile_questions.open(namefile, std::ios::app);
 			if (Ofile_questions.is_open())
 			{
-				for (int col = 1; col < 2; ++col)
+				std::cout << "FILE OPEN";
+				for (int col = 0; col <20; ++col)
 				{
+					count_questions += 1;
 					std::cout << "\n Метод" << ":    ";
 					std::cout << vopr_otv[col][1] << " \n ";//wcout
 					std::cout << "Документ: ";
@@ -164,11 +265,9 @@ public:
 						<< "\t   3 " << vopr_otv[col][6] << "\n"
 						<< "\t   4 " << vopr_otv[col][7] << "\n";
 
-					//std::cout << vopr_otv[col][8];//вывод правильного ответа
-				
-					//wchar_t otwet[10];
 					
-							std::cout << "FILE OPEN";
+					
+							
 							char otwet[10];
 							while (true)
 							{
@@ -180,7 +279,7 @@ public:
 								if (otwet[0] >= '1' && otwet[0] <= '4')
 								{
 
-									//std::wcout << "otwet< " << otwet;
+									
 									break;
 
 								}
@@ -202,33 +301,28 @@ public:
 								std::cout << "\n\t\t\t Правильно (нажмите любую клавишу...)\n";
 								correct_answers += 1;
 
-
-
-
-								//////////////////////////запись правильного в ворд
 							}
 
 							else
 							{
 
 								std::cout << "\n\t\t\tНеправильно! (нажмите любую клавишу...)\n ";
-								//////////////////////////запись неправильного в ворд
-								Ofile_questions.open(namefile, std::ios::app);
-								Ofile_questions << "\n\t Вопрос: ";
+								
+								Ofile_questions << "\n\t Вопрос: "
 
 
 
-								Ofile_questions << vopr_otv[col][0] << " " << vopr_otv[col][3] << "\n\n"
+									<<  vopr_otv[col][0] << " " << vopr_otv[col][3] << "\n\n"
 									<< "\t   1 " << vopr_otv[col][4] << "\n"
 									<< "\t   2 " << vopr_otv[col][5] << "\n"
 									<< "\t   3 " << vopr_otv[col][6] << "\n"
-									<< "\t   4 " << vopr_otv[col][7] << "\n";
+									<< "\t   4 " << vopr_otv[col][7] << "\n\n"
 
 
 							
-								Ofile_questions << "Правильный ответ: "
-									<< "\t  " << vopr_otv[col][8]
-									<< "Ваш ответ: " << (int)otwet;
+									<< "Правильный ответ: "
+									 << vopr_otv[col][8] << "\t  "
+									<< "Ваш ответ: " << otwet<<"\n\n\n";
 
 
 							}
@@ -252,7 +346,7 @@ public:
 
 
 			book->release();
-			Ofile_questions << correct_answers;
+			Ofile_questions <<"Всего вопросов: "<<count_questions <<"  правильных ответов : " << correct_answers;
 			Ofile_questions.close();
 			std::cout << "правильных ответов: " << correct_answers<<endl;
 		system("pause");

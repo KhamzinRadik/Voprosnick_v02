@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|solutionrelative:reg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\meny.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|solutionrelative:meny.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\meny.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|solutionrelative:meny.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB187F82-D805-4112-BC07-11251B799509}|Voprosnik.vcxproj|D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -63,33 +63,33 @@
               "RelativeDocumentMoniker": "reg.h",
               "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\reg.h*",
               "RelativeToolTip": "reg.h*",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAAwLMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAWwLIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-20T05:25:29.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-20T05:25:25.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "meny.h",
               "DocumentMoniker": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\meny.h",
               "RelativeDocumentMoniker": "meny.h",
               "ToolTip": "D:\\gitClone\\KhamzinRadik\\Voprosnick_v02\\meny.h",
               "RelativeToolTip": "meny.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-20T05:44:06.643Z",
               "EditorCaption": ""

@@ -18,10 +18,11 @@ void meny(user reg)
             if (i == count)ukaz[i] = "=>";
             else ukaz[i] = "  ";
         }
-
+        std::cout << "Версия 0.0.2 Создатель Хазин Радик Маратович";
         std::cout << "\n\n\n\n\t\t\t\t" << ukaz[0] << "Регистрация " << std::endl;
         std::cout << "\t\t\t\t" << ukaz[1] << "Тест " << std::endl;
         std::cout << "\t\t\t\t" << ukaz[2] << "Выход " << std::endl;
+       
         x = 0;
 
         x = getch();

@@ -136,12 +136,14 @@ public:
 
 	void TEST()
 	{
+		int SIZEVEC_vopr=0;
 		
 		if (nam_sheet == 0)
 		{
 			std::ofstream  Ofile_questions(namefile, std::ios::app);
 			Ofile_questions << "Метод ВИК \n";
 			Ofile_questions.close();
+			SIZEVEC_vopr = 207;
 		
 		}
 		if (nam_sheet == 1)
@@ -149,14 +151,14 @@ public:
 			std::ofstream  Ofile_questions(namefile, std::ios::app);
 			Ofile_questions << "Метод УК \n";
 			Ofile_questions.close();
-			
+			SIZEVEC_vopr = 303;
 		}
 		if (nam_sheet == 2)
 		{
 			std::ofstream  Ofile_questions(namefile, std::ios::app);
 			Ofile_questions << "Метод РК \n";
 			Ofile_questions.close();
-			
+			SIZEVEC_vopr = 231;
 		}
 		
 
@@ -175,12 +177,12 @@ public:
 
 		book->load(L"Voprosy.xls");
 		Sheet* sheet = book->getSheet(nam_sheet);
-		int SIZEVEC_vopr = sheet->lastRow();
+		
 		int correct_answers = 0;
 		for (int i = 0; i < 20; i++)
 		{
 
-			int a = rand() % (SIZEVEC_vopr - 0);
+			int a = rand() % (SIZEVEC_vopr +1);
 			if (Bvec.empty())
 			{
 				Bvec.push_back(a);
@@ -249,16 +251,19 @@ public:
 			std::ofstream  Ofile_questions(namefile, std::ios::app);
 			if (Ofile_questions.is_open())
 			{
-				std::cout << "FILE OPEN";
+				int count_vopros = 1;
+				std::cout << "FILE OPEN\n";
 				for (int col = 0; col <20; ++col)
 				{
+					
 					count_questions += 1;
+					std::cout << "вопрос " << count_vopros << " из 20ти" << endl;
 					std::cout << "\n Метод" << ":    ";
 					std::cout << vopr_otv[col][1] << " \n ";//wcout
 					std::cout << "Документ: ";
 					std::cout << vopr_otv[col][2] << "\n\n";//wcout
 					std::cout << "\t Вопрос: ";
-
+					count_vopros += 1;
 						std::cout << vopr_otv[col][0]<<" "<< vopr_otv[col][3] << "\n\n"//wcout
 						<< "\t   1 " << vopr_otv[col][4] << "\n"
 						<< "\t   2 " << vopr_otv[col][5] << "\n"
@@ -341,6 +346,7 @@ public:
 			else
 			{
 				std::cout << "FILE NOT OPEN";
+				system("pause");
 				
 			}
 
@@ -349,7 +355,7 @@ public:
 			Ofile_questions <<"Всего вопросов: "<<count_questions <<"  правильных ответов : " << correct_answers;
 			Ofile_questions.close();
 			std::cout << "правильных ответов: " << correct_answers<<endl;
-		system("pause");
+		    system("pause");
 		
 	}
 	

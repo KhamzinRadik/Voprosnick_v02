@@ -143,7 +143,7 @@ public:
 			std::ofstream  Ofile_questions(namefile, std::ios::app);
 			Ofile_questions << "Метод ВИК \n";
 			Ofile_questions.close();
-			SIZEVEC_vopr = 207;
+			//SIZEVEC_vopr = 207;
 		
 		}
 		if (nam_sheet == 1)
@@ -151,14 +151,14 @@ public:
 			std::ofstream  Ofile_questions(namefile, std::ios::app);
 			Ofile_questions << "Метод УК \n";
 			Ofile_questions.close();
-			SIZEVEC_vopr = 303;
+			//SIZEVEC_vopr = 303;
 		}
 		if (nam_sheet == 2)
 		{
 			std::ofstream  Ofile_questions(namefile, std::ios::app);
 			Ofile_questions << "Метод РК \n";
 			Ofile_questions.close();
-			SIZEVEC_vopr = 231;
+			//SIZEVEC_vopr = 231;
 		}
 		
 
@@ -177,12 +177,12 @@ public:
 
 		book->load(L"Voprosy.xls");
 		Sheet* sheet = book->getSheet(nam_sheet);
-		
+		int asd = sheet->lastFilledRow();
 		int correct_answers = 0;
 		for (int i = 0; i < 20; i++)
 		{
 
-			int a = rand() % (SIZEVEC_vopr +1);
+			int a = rand() % (asd +1);
 			if (Bvec.empty())
 			{
 				Bvec.push_back(a);
@@ -201,7 +201,7 @@ public:
 					}
 					else
 					{
-						if (a == SIZEVEC_vopr)
+						if (a == asd)
 						{
 							a = 0;
 						}
